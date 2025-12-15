@@ -1,0 +1,98 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+.conda/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Data files (büyük dosyalar - gerekirse yorumdan çıkarın)
+*.parquet
+*.pkl
+*.h5
+*.hdf5
+
+# Model files (eğer model dosyalarını commit etmek istemiyorsanız)
+# *.pkl
+# xgboost_attack_model.pkl
+# target_encoder.pkl
+
+# Output files (grafikler ve CSV'ler - gerekirse yorumdan çıkarın)
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.csv
+# feature_importance.csv
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+
+# Environment variables
+.env
+.env.local
+
+# OneDrive
+~$*
+
