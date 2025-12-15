@@ -52,17 +52,12 @@ Thumbs.db
 
 # Data files (büyük dosyalar - gerekirse yorumdan çıkarın)
 *.parquet
-*.pkl
+# *.pkl  # Model dosyaları commit edilecek
 *.h5
 *.hdf5
 
-# Model files (eğer model dosyalarını commit etmek istemiyorsanız)
-# *.pkl
-# xgboost_attack_model.pkl
-# target_encoder.pkl
-
 # Output files (grafikler ve CSV'ler - gerekirse yorumdan çıkarın)
-*.png
+# *.png  # PNG dosyaları commit edilecek
 *.jpg
 *.jpeg
 *.pdf
