@@ -1,0 +1,47 @@
+{
+  "xgboost": {
+    "n_estimators": 129,
+    "max_depth": 11,
+    "learning_rate": 0.18509647242724492,
+    "subsample": 0.9536024196634986,
+    "colsample_bytree": 0.9327506877080347,
+    "min_child_weight": 6,
+    "gamma": 0.9662934241353682,
+    "reg_alpha": 7.9460977071149355,
+    "reg_lambda": 9.201522073965325,
+    "objective": "multi:softprob",
+    "random_state": 42,
+    "n_jobs": -1,
+    "tree_method": "hist",
+    "eval_metric": "mlogloss",
+    "verbosity": 1
+  },
+  "catboost": {
+    "iterations": 464,
+    "depth": 9,
+    "learning_rate": 0.2415816208779918,
+    "l2_leaf_reg": 2.1553974046100213,
+    "border_count": 110,
+    "bagging_temperature": 0.20342455622495514,
+    "random_seed": 42,
+    "verbose": false,
+    "loss_function": "MultiClass",
+    "eval_metric": "MultiClass"
+  },
+  "lightgbm": {
+    "n_estimators": 250,
+    "max_depth": 11,
+    "learning_rate": 0.26882434674207917,
+    "num_leaves": 73,
+    "subsample": 0.6701160752156363,
+    "colsample_bytree": 0.9648937955892855,
+    "min_child_samples": 92,
+    "reg_alpha": 3.6680333744438745,
+    "reg_lambda": 7.585484038031899,
+    "objective": "multiclass",
+    "num_class": 10,
+    "random_state": 42,
+    "n_jobs": -1,
+    "verbosity": -1
+  }
+}
