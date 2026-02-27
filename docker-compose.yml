@@ -1,0 +1,26 @@
+version: '3'
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.9
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"  # RAM kullanımını sınırlar (Çok Önemli!)
+    ports:
+      - "9200:9200"
+    restart: always  # Kapanırsa tekrar başlat
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.17.9
+    container_name: kibana
+    ports:
+      - "5601:5601"
+    depends_on:
+      - elasticsearch
+    restart: always  # Kapanırsa tekrar başlat
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
